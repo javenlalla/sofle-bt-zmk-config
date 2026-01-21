@@ -56,6 +56,17 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
         };
+
+        hrmRight: hrmRight {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRMRIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
+        };
     };
 
     keymap {
@@ -72,11 +83,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE   &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                             &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp EQUAL
-&kp TAB     &kp Q   &kp W     &kp E     &kp R      &kp T      &kp Y                              &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp ESCAPE  &kp A   &kp S     &kp D     &kp F      &kp G      &kp H                              &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z   &kp X     &kp C     &kp V      &kp B      &kp ESCAPE  &kp C_PLAY  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                    &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp SPACE   &kp ENTER   &mo RAISE  &kp RCTRL  &kp RALT   &kp RGUI
+&kp GRAVE   &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                             &kp N6     &kp N7     &kp N8                     &kp N9    &kp N0    &kp EQUAL
+&kp TAB     &kp Q   &kp W     &kp E     &kp R      &kp T      &kp Y                              &kp U      &kp I                      &kp O     &kp P     &kp BSPC
+&kp ESCAPE  &kp A   &kp S     &kp D     &kp F      &kp G      &kp H                              &kp J      &hrmRight RIGHT_CONTROL K  &kp L     &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z   &kp X     &kp C     &kp V      &kp B      &kp ESCAPE  &kp C_PLAY  &kp N      &kp M      &kp COMMA                  &kp DOT   &kp FSLH  &kp RSHFT
+                    &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp SPACE   &kp ENTER   &mo RAISE  &kp RCTRL  &kp RALT                   &kp RGUI
             >;
         };
 
