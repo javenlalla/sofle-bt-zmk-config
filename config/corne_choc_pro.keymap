@@ -99,8 +99,8 @@
             >;
         };
 
-        extra_layer_1 {
-            display-name = "EXTRA 1";
+        adjust_layer {
+            display-name = "ADJUST";
             bindings = <
 &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &rgb_ug RGB_EFF  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -109,8 +109,8 @@
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        accents {
+            display-name = "ACCENTS";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -157,6 +157,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        adjust_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
