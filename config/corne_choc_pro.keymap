@@ -74,10 +74,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &kp LCTRL  &kp RCTRL  &kp N6    &kp N7    &kp N8     &kp N9     &kp N0  &kp BSPC
-&kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LALT   &kp RALT   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans  &trans
-&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &trans    &trans    &trans     &trans     &trans  &trans
-                                          &kp LGUI      &trans        &kp SPACE                             &kp LGUI  &trans    &kp SPACE
+&kp GRAVE  &kp N1           &kp N2       &kp N3     &kp N4          &kp N5           &kp LCTRL  &kp RCTRL  &kp N6            &kp N7             &kp N8                         &kp N9                                &kp N0                 &kp EQUAL
+&trans     &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR      &kp PERCENT      &kp LALT   &kp RALT   &kp CARET         &kp AMPERSAND      &hrmRight RIGHT_CONTROL ASTRK  &hrmRight RIGHT_ALT LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans     &kp EQUAL        &kp MINUS    &kp PLUS   &kp LEFT_BRACE  &kp RIGHT_BRACE                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS                      &kp SEMICOLON                         &kp BACKSLASH          &trans
+                                         &trans     &trans          &trans                                 &trans            &trans             &trans
             >;
         };
 
