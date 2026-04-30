@@ -114,10 +114,10 @@
         accents {
             display-name = "ACCENTS";
             bindings = <
-&trans  &trans  &kp DE_E  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &trans  &kp FR_E_ACUTE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp DE_SHARP_S  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
 
