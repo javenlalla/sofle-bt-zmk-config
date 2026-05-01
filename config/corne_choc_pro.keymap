@@ -64,7 +64,7 @@
             tap-ms = <20>;
         };
 
-        mcr_eur: accent_E {
+        mcr_eur: mcr_eur {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -75,7 +75,7 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "ACCENT_E";
+            label = "MCR_EUR";
             wait-ms = <20>;
             tap-ms = <20>;
         };
