@@ -148,10 +148,10 @@
         accents {
             display-name = "ACCENTS";
             bindings = <
-&trans  &trans     &trans     &accent_e  &trans  &trans  &trans  &trans  &trans  &kp RA(Y)  &trans  &kp RA(P)  &trans  &trans
-&trans  &kp RA(Q)  &kp RA(S)  &trans     &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
-&trans  &trans     &trans     &trans     &trans  &trans                  &trans  &trans     &trans  &trans     &trans  &trans
-                              &trans     &trans  &trans                  &trans  &trans     &trans
+&trans  &trans     &trans     &accent_e  &trans  &trans    &trans  &trans  &trans  &kp RA(Y)  &trans  &kp RA(P)  &trans  &trans
+&trans  &kp RA(Q)  &kp RA(S)  &trans     &trans  &trans    &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &mcr_eur                  &trans  &trans     &trans  &trans     &trans  &trans
+                              &trans     &trans  &trans                    &trans  &trans     &trans
             >;
         };
 
