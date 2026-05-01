@@ -47,6 +47,24 @@
         };
     };
 
+    macros {
+        accent_e: accent_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ACCENT_E";
+            wait-ms = <20>;
+            tap-ms = <20>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -114,10 +132,10 @@
         accents {
             display-name = "ACCENTS";
             bindings = <
-&trans  &trans     &trans     &kp RA(E)  &trans  &trans  &trans  &trans  &trans  &kp RA(Y)  &trans  &kp RA(P)  &trans  &trans
-&trans  &kp RA(Q)  &kp RA(S)  &trans     &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
-&trans  &trans     &trans     &trans     &trans  &trans                  &trans  &trans     &trans  &trans     &trans  &trans
-                              &trans     &trans  &trans                  &trans  &trans     &trans
+&trans  &trans     &trans     &kp RA(E)  &accent_e  &trans  &trans  &trans  &trans  &kp RA(Y)  &trans  &kp RA(P)  &trans  &trans
+&trans  &kp RA(Q)  &kp RA(S)  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans                  &trans  &trans     &trans  &trans     &trans  &trans
+                              &trans     &trans     &trans                  &trans  &trans     &trans
             >;
         };
 
