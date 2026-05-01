@@ -79,22 +79,6 @@
             wait-ms = <20>;
             tap-ms = <20>;
         };
-
-        mcr_jb_extend_sel: mcr_jb_extend_sel {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "MCR_JB_EXTEND_SEL";
-            wait-ms = <20>;
-            tap-ms = <20>;
-        };
     };
 
     keymap {
@@ -164,10 +148,10 @@
         utility_layer {
             display-name = "UTILITY_LAYER";
             bindings = <
-&trans  &trans     &trans     &accent_e  &trans  &trans    &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Q)  &kp RA(S)  &trans     &trans  &trans    &trans  &trans  &kp LA(A)  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans     &trans  &mcr_eur                  &trans     &trans  &trans  &trans  &trans  &trans
-                              &trans     &trans  &trans                    &trans     &trans  &trans
+&trans  &trans  &trans  &accent_e  &trans  &trans    &trans  &trans  &kp LS(LC(T))  &kp LS(LC(R))  &kp LS(LC(C))  &kp LC(F2)  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &kp LA(A)      &kp LS(LC(A))  &kp LS(LC(B))  &trans      &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &mcr_eur                  &kp LS(LC(U))  &kp LC(Q)      &trans         &trans      &trans  &trans
+                        &trans     &trans  &trans                    &trans         &trans         &trans
             >;
         };
 
