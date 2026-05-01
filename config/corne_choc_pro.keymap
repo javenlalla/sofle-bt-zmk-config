@@ -64,7 +64,7 @@
             tap-ms = <20>;
         };
 
-        mcr_eur_sym: accent_E {
+        mcr_eur: accent_E {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -148,10 +148,10 @@
         accents {
             display-name = "ACCENTS";
             bindings = <
-&trans  &trans     &trans     &accent_e  &trans  &trans        &trans  &trans  &trans  &kp RA(Y)  &trans  &kp RA(P)  &trans  &trans
-&trans  &kp RA(Q)  &kp RA(S)  &trans     &trans  &trans        &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
-&trans  &trans     &trans     &trans     &trans  &mcr_eur_sym                  &trans  &trans     &trans  &trans     &trans  &trans
-                              &trans     &trans  &trans                        &trans  &trans     &trans
+&trans  &trans     &trans     &accent_e  &trans  &trans  &trans  &trans  &trans  &kp RA(Y)  &trans  &kp RA(P)  &trans  &trans
+&trans  &kp RA(Q)  &kp RA(S)  &trans     &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans                  &trans  &trans     &trans  &trans     &trans  &trans
+                              &trans     &trans  &trans                  &trans  &trans     &trans
             >;
         };
 
