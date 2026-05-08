@@ -148,10 +148,10 @@
         utility_layer {
             display-name = "UTILITY_LAYER";
             bindings = <
-&trans  &trans  &trans  &accent_e  &trans  &trans    &trans  &trans  &kp LS(LC(T))  &kp LS(LC(R))  &kp LS(LC(C))  &kp LC(F2)  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &kp LA(A)      &kp LS(LC(A))  &kp LS(LC(B))  &trans      &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &mcr_eur                  &kp LS(LC(U))  &kp LC(Q)      &trans         &trans      &trans  &trans
-                        &trans     &trans  &trans                    &trans         &trans         &trans
+&trans  &trans  &trans  &accent_e  &trans  &trans    &trans  &trans  &kp LS(LC(T))  &kp LS(LC(R))     &kp LS(LC(C))      &kp LC(F2)  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &kp LA(A)      &kp LS(LC(A))     &kp LS(LC(B))      &trans      &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &mcr_eur                  &kp LS(LC(U))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LC(Q)   &trans  &kp LS(LC(NUMBER_1))
+                        &trans     &trans  &trans                    &trans         &trans            &trans
             >;
         };
 
