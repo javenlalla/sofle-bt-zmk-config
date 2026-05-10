@@ -128,10 +128,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &trans  &kp PRINTSCREEN  &trans            &trans          &trans    &trans  &trans  &trans        &kp HOME        &kp END       &trans           &trans      &trans
-&trans      &trans  &kp LEFT_ALT     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LWIN  &trans  &trans  &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE  &kp BACKSPACE
-&trans      &trans  &trans           &trans            &trans          &trans                    &msc SCRL_UP  &msc SCRL_DOWN  &kp PAGE_UP   &kp PAGE_DOWN    &trans      &trans
-                                     &trans            &trans          &trans                    &trans        &trans          &trans
+&kp ESCAPE  &trans  &kp PRINTSCREEN  &trans            &trans          &trans    &kp C_VOLUME_UP    &trans  &trans        &kp HOME        &kp END       &trans           &trans      &trans
+&trans      &trans  &kp LEFT_ALT     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LWIN  &kp C_VOLUME_DOWN  &trans  &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE  &kp BACKSPACE
+&trans      &trans  &trans           &trans            &trans          &trans                               &msc SCRL_UP  &msc SCRL_DOWN  &kp PAGE_UP   &kp PAGE_DOWN    &trans      &trans
+                                     &trans            &trans          &trans                               &trans        &trans          &trans
             >;
         };
 
@@ -148,10 +148,10 @@
         utility_layer {
             display-name = "UTILITY_LAYER";
             bindings = <
-&trans  &trans  &trans  &accent_e  &trans  &trans    &trans  &trans  &kp LS(LC(T))  &kp LS(LC(R))     &kp LS(LC(C))      &kp LC(F2)  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &kp LA(A)      &kp LS(LC(A))     &kp LS(LC(B))      &trans      &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &mcr_eur                  &kp LS(LC(U))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LC(Q)   &trans  &kp LS(LC(NUMBER_1))
-                        &trans     &trans  &trans                    &trans         &trans            &trans
+&trans  &trans  &trans     &accent_e  &trans     &trans    &trans  &trans  &kp LS(LC(T))  &kp LS(LC(R))     &kp LS(LC(C))      &trans     &trans  &kp LC(F2)
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &kp LA(A)      &kp LS(LC(A))     &kp LS(LC(B))      &trans     &trans  &trans
+&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &mcr_eur                  &kp LS(LC(U))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LC(Q)  &trans  &kp LS(LC(NUMBER_1))
+                           &trans     &trans     &trans                    &trans         &trans            &trans
             >;
         };
 
