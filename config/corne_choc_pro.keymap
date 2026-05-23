@@ -111,7 +111,7 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp N1           &kp N2       &kp N3     &kp N4          &kp N5           &trans  &trans  &kp N6            &kp N7             &kp N8                         &kp N9                               &kp N0                 &trans
+&kp GRAVE  &kp N1           &kp N2       &kp N3     &kp N4          &kp N5           &trans  &trans  &kp N6            &kp N7             &kp N8                         &kp N9                               &kp N0                 &kp F2
 &trans     &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR      &kp PERCENT      &trans  &trans  &kp CARET         &kp AMPERSAND      &hrmRight RIGHT_CONTROL ASTRK  &hrmRight LEFT_ALT LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans     &kp EQUAL        &kp MINUS    &kp PLUS   &kp LEFT_BRACE  &kp RIGHT_BRACE                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS                      &kp SEMICOLON                        &kp BACKSLASH          &trans
                                          &trans     &trans          &trans                           &trans            &trans             &trans
@@ -148,10 +148,10 @@
         utility_layer {
             display-name = "UTILITY_LAYER";
             bindings = <
-&trans  &trans  &trans     &accent_e  &trans     &trans    &trans  &trans  &kp LS(LC(T))  &kp LS(LC(R))     &kp LS(LC(C))      &trans     &trans  &kp LC(F2)
-&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &kp LA(A)      &kp LS(LC(A))     &kp LS(LC(B))      &trans     &trans  &trans
-&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &mcr_eur                  &kp LS(LC(U))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LC(Q)  &trans  &kp LS(LC(NUMBER_1))
-                           &trans     &trans     &trans                    &trans         &trans            &trans
+&trans  &trans  &trans     &accent_e  &trans     &trans    &trans  &kp LS(LA(F10))  &kp LS(LC(T))  &kp LS(LC(R))     &kp LS(LC(C))      &trans     &trans  &kp LC(F2)
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans           &kp LA(A)      &kp LS(LC(A))     &kp LS(LC(B))      &trans     &trans  &trans
+&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &mcr_eur                           &kp LS(LC(U))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &kp LC(Q)  &trans  &kp LS(LC(NUMBER_1))
+                           &trans     &trans     &trans                             &trans         &trans            &trans
             >;
         };
 
